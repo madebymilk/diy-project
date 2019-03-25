@@ -1,0 +1,42 @@
+body {
+  /* Remove user agent (browser) stylesheet styling */
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  /* Floating elements sit next to each other on one line as far as there is room. Float: left; makes elements sit next to each other starting on the left. We can also use float: right;  */
+  float: left;
+  /* We set a width of 50% to split the screen into two columns */
+  width: 50%;
+  height: 500px;
+}
+
+/* This styles up elements in html with a class of .big-image */
+.big-image {
+  /* This stretches the background images to cover the sections */
+  background-size: cover;
+}
+
+/* These add different background images to the sections with id attributes */
+#topic-one {
+  background-image: url('https://placebear.com/g/500/500');
+}
+
+#topic-two {
+  background-image: url('https://placebear.com/g/500/500');
+}
+
+#topic-three {
+  background-image: url('https://placebear.com/g/500/500');
+}
+
+div {
+  /* This moves the topic content vertically down inside the sections with text. To adjust position, increase or decrease the percentage*/
+  transform: translateY(70%);
+}
+
+form {
+  /* This fixes the floated layout and allows us to add height to the form */
+  clear: left;
+}
